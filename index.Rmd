@@ -4,7 +4,7 @@ author: "(Dann)"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
-    vertical_layout: fill
+    vertical_layout: scroll
 ---
 
 ```{r setup, include=FALSE}
@@ -19,7 +19,9 @@ Column {data-width=350}
 
 ###
 
-<div class="align-top"><img src="images/Hekman_Dann.jpg" width="90%" /></div>
+<div class="align-top"><img src="images/Hekman_Dann.jpg" width="100%" /></div>
+
+### Connect. 
 
  - [github](www.github.com/dannhek)
  - [Linkedin](https://www.linkedin.com/in/dannhek/)
@@ -93,21 +95,21 @@ For Fun
 Column 
 -----------------------------------------------------------------------
 
-# I like to play bass in local bands
+### I like to play bass in local bands
 
 <div class="fun-img"><img src="images/IMG_8925 copy.png" width="100%" /></div>
 
 Column 
 -----------------------------------------------------------------------
 
-# I like kayaking on Madison's beautiful lakes
+### I like kayaking on Madison's beautiful lakes
 
 <div class="fun-img"><img src="images/IMG_9740.png" width="100%" /></div>
 
 Column 
 -----------------------------------------------------------------------
 
-# I like hanging out with my wife and dog
+### I like hanging out with my wife and dog
 
 <div class="fun-img"><img src="images/IMG_9221.png" width="100%" /></div>
 
