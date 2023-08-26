@@ -1,0 +1,13 @@
+body, h1 {
+    font-family: Helvetica, sans-serif;
+}
+h3 {
+    font-family: Garamond;
+}
+.navbar {
+  background-color:darkred;
+  border-color:white;
+}
+.navbar-brand {
+  color:black;
+}
