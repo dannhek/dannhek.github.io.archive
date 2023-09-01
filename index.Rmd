@@ -37,6 +37,13 @@ Column {data-width=650}
 
 Epidemiologist and Data Scientist 
  
+ 
+CV
+=======================================================================
+
+Column 
+-----------------------------------------------------------------------
+
 ### Education
 
 #### University of Wisconsin - Madison
@@ -46,7 +53,7 @@ Epidemiologist and Data Scientist
  - Department: Population Health
  - Concentration: Epidemiology
 
-#### University of Michigian - Ann Arbor
+#### University of Michigan - Ann Arbor
 
  - Bachelor's of Science
  - 2006 - 2010 
@@ -65,13 +72,6 @@ Epidemiologist and Data Scientist
  - Completed via verified Coursera
  - 2014 - 2016
  - Department: Biostatistics
- 
- 
-Publications
-=======================================================================
-
-Column 
------------------------------------------------------------------------
 
 ### Peer Reviewed Articles
 
