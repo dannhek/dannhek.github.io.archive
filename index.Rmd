@@ -3,7 +3,7 @@ title: "Daniel J Hekman"
 author: "(Dann)"
 output: 
   flexdashboard::flex_dashboard:
-    orientation: columns
+    orientation: rows
     vertical_layout: scroll
     theme: simplex
 ---
@@ -15,12 +15,23 @@ library(flexdashboard)
 About Me
 =======================================================================
 
-Column {data-width=350}
+Row {height=400}
 -----------------------------------------------------------------------
 
-###
+### {data-width=350, data-height=400}
 
 <div class="align-top"><img src="images/Hekman_Dann.jpg" width="100%" /></div>
+
+### About Me
+
+Epidemiologist and Data Scientist. I want to understand the world.  
+
+Many people try to answer empirical questions with non-empirical evidence. I want to change that.
+
+I work with Brian Patterson to research the effects of informatics-based interventions in the emergency department on patient outcomes, especially falls and cognitive impairment screenings. 
+
+Row {data-width=650}
+-----------------------------------------------------------------------
 
 ### Connect  
 
@@ -28,20 +39,25 @@ Column {data-width=350}
  - [Linkedin](https://www.linkedin.com/in/dannhek/)
  - [Google Scholar](https://scholar.google.com/citations?user=Bor3JqwAAAAJ&hl=en&oi=ao)
  - [email](mailto:dannhek@gmail.com)
- 
 
-Column {data-width=650}
------------------------------------------------------------------------
 
-### About Me
+### I like to play bass in local bands
 
-Epidemiologist and Data Scientist 
+<div class="fun-img"><img src="images/bass.png" width="100%" /></div>
+
+### I like kayaking on Madison's beautiful lakes
+
+<div class="fun-img"><img src="images/kayak.png" width="100%" /></div>
+
+### I like hanging out with my wife and dog
+
+<div class="fun-img"><img src="images/dog.png" width="100%" /></div>
  
  
 CV
 =======================================================================
 
-Column 
+Row 
 -----------------------------------------------------------------------
 
 ### Education
@@ -73,6 +89,9 @@ Column
  - 2014 - 2016
  - Department: Biostatistics
 
+Row 
+-----------------------------------------------------------------------
+
 ### Peer Reviewed Articles
 
  - Hekman, D. J., Cochran, A. L., Maru, A. P., Barton, H. J., Shah, M. N., Wiegmann, D., Smith, M. A., Liao, F., & Patterson, B. W. (2023). Effectiveness of an Emergency Department–Based Machine Learning Clinical Decision Support Tool to Prevent Outpatient Falls Among Older Adults: Protocol for a Quasi-Experimental Study. JMIR Res Protoc, 12, e48128. https://doi.org/10.2196/48128
@@ -84,41 +103,24 @@ Column
  - Kern, M. W., Jewell, C. M., Hekman, D. J., & Schnapp, B. H. (2022). Number of Patient Encounters in Emergency Medicine Residency Does Not Correlate with In-Training Exam Domain Scores. The Western Journal of Emergency Medicine. https://doi.org/10.5811/westjem.2022.11.57997
  - Triche, B. L., Annamalai, A., Pooler, B. D., Glazer, J. M., Zadra, J. D., Barclay-Buchanan, C. J., Hekman, D. J., Mao, L., Pickhardt, P. J., & Lubner, M. G. (2022). Positive oral contrast material for CT evaluation of non-traumatic abdominal pain in the ED: prospective assessment of diagnostic confidence and throughput  metrics. Abdominal Radiology (New York), 47(8), 2956–2967. https://doi.org/10.1007/s00261-022-03574-6
 
+Row 
+-----------------------------------------------------------------------
+
 ### Presentations, Posters, and Non-reviewed Articles
 
  - Hekman, D. J. (2021). On Balance: Costs and Benefits of School Shutdowns. On Balance. https://benefitcostanalysis.org/blog/on-balance/2021-01-25-on-balance-costs-and-benefits-of-school-shutdowns
  - Hekman, D. J. (2020, October 22). CA-CDS Reporting Dashboard at UW. 3rd Annual Child Abuse Clinical Decision Support Virtual Conference.
  - Hekman, D., Maru, A. P., & Patterson, B. W. (2023, March 7). Dashboarding for Machine Learning-based Clinical Decision Support Implementation and Monitoring Toolkit [Text]. HIPxChange.Org. https://www.hipxchange.org/CDSDashboard
+ - Hekman, D.; Tsuchida, R. (2023) SAEM Presentation
 
-
-For Fun
-=======================================================================
-
-Column 
------------------------------------------------------------------------
-
-### I like to play bass in local bands
-
-<div class="fun-img"><img src="images/bass.png" width="100%" /></div>
-
-Column 
------------------------------------------------------------------------
-
-### I like kayaking on Madison's beautiful lakes
-
-<div class="fun-img"><img src="images/kayak.png" width="100%" /></div>
-
-Column 
------------------------------------------------------------------------
-
-### I like hanging out with my wife and dog
-
-<div class="fun-img"><img src="images/dog.png" width="100%" /></div>
 
 Links and Resources
 =======================================================================
 
-Column 
+Row 
 -----------------------------------------------------------------------
 
+### Links and Resources 
+
  - This website was created with [flexdashboard](https://pkgs.rstudio.com/flexdashboard/)
+ - My Master's Thesis lives [here](https://github.com/dannhek/ms_thesis_public/) It's never getting published, but take a look at what made me hate everything for a year. 
