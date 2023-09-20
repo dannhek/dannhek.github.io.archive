@@ -1,13 +1,58 @@
 body, h1 {
     font-family: Helvetica, sans-serif;
+    background:darkgray;
+    padding:60px 0 0 8px;
 }
-h3 {
+
+body hr{
+	border-color:darkgray;
+	margin:10px 0;
+
+}
+h1, h2 {
+	color: darkred;
+}
+
+h3, h2 {
     font-family: Garamond;
 }
-.navbar {
-  background-color:darkred;
-  border-color:white;
+
+h4 {
+	color: black;
+	text-align: center;
 }
-.navbar-brand {
-  color:black;
+
+.textbox {
+	background: white;
+}
+
+.columns, .rows {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	background: transparent;
+}
+.columns {
+	flex-direction: row;
+}
+.rows {
+	flex-direction: column;
+}
+
+
+
+.column, .row {
+	border-style: outset;
+	margin: 10px;
+	box-shadow: 2px 2px black;
+	background: white;
+	color: black;
+	border: 2px solid gray;
+}
+.row {
+	width: 100%;
+}
+
+.fun-img {
+	width: 100%
 }

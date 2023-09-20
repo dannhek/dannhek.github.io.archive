@@ -1,0 +1,29 @@
+---
+title: "Fun Stuff"
+output:
+  html_document: 
+    css: styles.css
+---
+:::::: {.columns}
+
+:::{.column}
+
+#### I like to play bass in local rock bands
+
+<div class="fun-img"><img src="images/bass.png"/></div>
+
+:::  
+
+:::{.column}
+#### I like kayaking on Madison's beautiful lakes
+
+<div class="fun-img"><img src="images/kayak.png"/></div>
+:::  
+
+:::{.column}
+#### I like hanging out with my wife and dog
+
+<div class="fun-img"><img src="images/dog.png" width="100%" /></div>
+::: 
+
+::::::
