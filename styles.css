@@ -17,6 +17,15 @@ h3, h2 {
     font-family: Garamond;
 }
 
+
+.navbar {
+  background-color:darkred;
+  border-color:white;
+}
+.navbar-brand {
+  color:black;
+}
+
 h4 {
 	color: black;
 	text-align: center;
