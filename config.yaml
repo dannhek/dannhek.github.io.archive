@@ -1,0 +1,344 @@
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: "Hugo Profile"
+theme: "hugo-profile"
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+    # - identifier: gallery
+    #   name: Gallery
+    #   title: Blog posts
+    #   url: /gallery
+    #   weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Daniel (Dann) J Hekman"
+  description: Data Scientist and Epidemiologist
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/phoenix.jpeg"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+  
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    disableThemeToggle: false
+    defaultTheme: "dark" # light
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Dann Hekman" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: true
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hello World, my name is"
+    title: "Dann."
+    subtitle: "I use real world data to answer empirical questions"
+    content: "
+    I want to understand the world, and I use data and the tools of epidemiology to do that. "
+    image: /images/avatar.jpg
+    bottomImage:
+      enable: true
+    roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: "#"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://example.com
+        - icon: fab fa-orcid
+          url: https://example.com
+        - icon: ai google-scholar
+          url: https://scholar.google.com
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    # image: /images/avatar.jpg
+    content: |-
+      I am a data scientist with a passion for answering questions about what makes people sick and how we can improve their health and quality of life. 
+      
+      I have a degree in epidemiology, and I have a strong professional history of working with electronic health record systems (EHRs). 
+      
+      I work primarily with real world and EHR data. I work for the Berbee-Walsh Department of Emergency Medicine and do research with Dr. Brian Patterson.
+    skills:
+      enable: true
+      title: "My tools of choice:"
+      items:
+        - "R"
+        - "All of Us"
+        - "Neovim"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Data Scientist"
+        company: "Berbee-Walsh Department of Emergency Medicine - University of Wisconsin School of Medicine and Public Health"
+        companyUrl: "https://emed.wisc.edu"
+        date: "Sep 2019 - present"
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"
+        content: "I work for the Berbee-Walsh Department of Emergency Medicine and do research with Dr. Brian Patterson."
+
+      - job: "SQL Database Administrator"
+        company: "Epic Hosting"
+        companyUrl: "https://epic.com"
+        date: "Nov 2017 - Aug 2019"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: false
+          content: 
+        content: I worked as a database administrator for Epic's hosted division and worked to automate maintenance processes and best practices with Puppet.
+      - job: "Technical Services Engineer"
+        company: "Epic"
+        companyUrl: "https://epic.com"
+        date: "Aug 2010 - Nov 2017"
+        info:
+          enable: false
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        content: |
+          I was a technical services engineer (TS) for Epic's Hospital Billing software, where I ...
+
+          - was a subject matter expert for all things revenue capture.
+          - was a prolific coder.
+          - was awarded "TS of the Year" after being nominated by my peers.
+          - supported dozens of domestic go-lives and multiple international go-lives.
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Master of Population Health"
+        school:
+          name: "University of Wisconsin, Madison"
+          url: "https://pophealth.wisc.edu"
+        date: "2019 - 2022"
+        GPA: "3.9 out of 4.0"
+        content: "
+        	Focus on Epidemology and Causal Inference"
+      - title: "Bachelor of Science in Economics and Psychology"
+        school:
+          name: "University of Michigan, Ann Arbor"
+          url: "https://umich.edu"
+        date: "2006 - 2010"
+        GPA: "3.5 out of 4.0"
+        content: |-
+          
+          - Double Major in Economics and Psychology
+          - Minor in Statistics.
+
+        featuredLink:
+          enable: false
+          name: "My academic record"
+          url: "https://example.com"
+
+
+  # Achievements
+  achievements:
+    enable: true
+    title: "Fun Stuff"
+    items:
+      - title: Kayaking
+        content: I enjoy paddling Madison's beautiful lakes.
+        #url: https://example.com
+        image: /images/kayak.png
+      - title: Music
+        content: I'm a bassist in a couple local punk bands.
+        image: /images/bass.png
+      - title: Dog Owner
+        content: I've got an insufferable-but-adorable pup named (Theodore) Roosevelt.
+        image: /images/dog.png
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Falls Prevention
+        content: Effectiveness of an Emergency Department-Based Machine Learning Clinical Decision Support Tool to Prevent Outpatient Falls Among Older Adults.
+        #image: /images/projects/profile.png
+        featured:
+          name: CT.gov
+          link: https://www.clinicaltrials.gov/study/NCT05810064. 
+        badges:
+          - "Machine Learning"
+          - "Effectiveness Research"
+          - "Geriatrics"
+        links:
+          - icon: fa fa-envelope
+            url: https://pubmed.ncbi.nlm.nih.gov/37535416/
+          - icon: fa fa-envelope
+            url: https://pubmed.ncbi.nlm.nih.gov/38029792/
+
+      - title: All of Us Research
+        content: Building a Cohort of Pregnancies to quantify things that currently just get dismissed with "Every body is different." In other words, using empirical data to find answers to empirical questions.
+        #image: /images/projects/converter.jpg
+        featured:
+          name: AoU
+          link: https://workbench.researchallofus.org/
+        badges:
+          - "All of Us"
+          - "AoU"
+          - "Real World Data"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/dannhek
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: Want to collaborate on some cool research? Drop me a line!
+    email: dannhek@gmail.com
+    btnName: Let's talk
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: false
+      disableFeaturedImage: true
+    socialNetworks:
+      github: https://github.com/dannhek
+      linkedin: https://linkedin.com/dannhek
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
